@@ -9,7 +9,7 @@ echo "<label for='nbLignes'>Lignes</label>";
 echo "<input id='nbLignes' type='number' min='0' max='20' placeholder='Nombre de lignes' name='nbLignes'>";
 
 echo "<label for='couleur'>Couleurs</label>";
-echo "<input id='couleur' type='color' name='Couleur'>";
+echo "<input id='couleur' type='color' name='couleur'>";
 
 echo "<label for='valider'></label>";
 echo "<input id='valider' type='submit' name='Valider' value='Valider'>";
