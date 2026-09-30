@@ -1,0 +1,54 @@
+h1 {
+    font-weight: bold;
+    color: brown
+}
+
+h2 {
+    color : red
+
+}
+
+h3 {
+    color : pink
+}
+
+table,td{
+    width : 800px;
+    height: 70px;
+    border-collapse: collapse;
+    border: solid 5px black;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin-top: 120px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #8e0dc1;
+    font-family: sans-serif;
+}
+
+form label {
+    margin-top: 15px;
+    font-weight: 800;
+    text-align: center;
+}
+
+form input {
+    align-self: center;
+    max-width: 200px;
+    padding: 15px;
+    margin-top: 5px;
+    border-radius: 6px;
+}
+#valider{
+    background: white;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+}
+#valider:hover {
+    background-color: #656565;
+}

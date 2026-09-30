@@ -1,0 +1,19 @@
+h1 {
+    font-weight: bold;
+    color: brown
+}
+
+h2 {
+    color : red
+
+}
+
+h3 {
+    color : pink
+}
+
+table th td{
+    border-collapse: collapse;
+    border: solid 1px;
+
+}
