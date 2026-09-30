@@ -8,18 +8,21 @@ echo "<input id='nbColonnes' type='number' min='0' max='20' placeholder='Nombre 
 echo "<label for='nbLignes'>Lignes</label>";
 echo "<input id='nbLignes' type='number' min='0' max='20' placeholder='Nombre de lignes' name='nbLignes'>";
 
-echo "<label for='couleur'>Couleurs</label>";
-echo "<input id='couleur' type='color' name='couleur'>";
+echo "<label for='couleur1'>Couleurs Principale </label>";
+echo "<input id='couleur1' type='color' name='couleur2'>";
+echo "<label for='couleur2'>Couleurs Secondaire </label>";
+echo "<input id='couleur2' type='color' name='couleur2'>";
 
 echo "<label for='valider'></label>";
 echo "<input id='valider' type='submit' name='Valider' value='Valider'>";
 
 echo "</form>";
 
-if (isset($_POST['nbColonnes'],$_POST['nbLignes'],$_POST['couleur'])){
+if (isset($_POST['nbColonnes'],$_POST['nbLignes'],$_POST['couleur1'],$_POST['couleur2'])) {
     $nbLignes = $_POST['nbLignes'];
     $nbColonnes = $_POST['nbColonnes'];
-    $color = $_POST['couleur'];
+    $color1 = $_POST['couleur1'];
+    $color2 = $_POST['couleur2'];
 
 echo "<table>";
     for($i=1;$i<=$nbLignes;$i++){
@@ -28,13 +31,13 @@ echo "<table>";
         for($j=1;$j<=$nbColonnes;$j++){
 
             if(($i+$j)%2==1){
-                $color = $_POST['couleur'];
+                $colorChoisie = $color1;
             }
             else {
-                $color = 'white';
+                $colorChoisie = 'white';
             }
 
-            echo "<td style='background-color: $color'  > </td>";
+            echo "<td style='background-color: $colorChoisie' > </td>";
         }
         echo "</tr>";
     }
