@@ -10,5 +10,13 @@ echo "
 </form>";
 
 if (isset($_GET['error'])) {
-    echo "<p> Tu dois remplir le formulaire</p>";
+    $error = $_GET['error'];
+    switch ($error){
+        case 1001 :
+            echo "<p>Il faut remplir le formulaire Monsieur</p>";
+        case 1002 :
+            echo "<p>Le login ou le mdp est incorrect</p>";
+
+
+    }
 }
