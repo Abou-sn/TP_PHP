@@ -1,11 +1,11 @@
 <?php
 echo "<h1>Formulaire</h1>";
 echo "
-<form action='action.php' method='post'>
+<form action='login.php' method='post'>
     <label for='login'>Login</label>
     <input type='text' name='login' id='login'>
     <label for='mdp'>Mot de passe</label>
-    <input type='password' name='mdp' id='mdp'>
+    <input type='password' name='password' id='password'>
     <input type='submit' name='valider' value='Valider'>
 </form>";
 
